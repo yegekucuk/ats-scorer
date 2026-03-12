@@ -11,6 +11,7 @@ An AI-powered resume scoring application built with Next.js that evaluates resum
 - 📊 Detailed evaluation across 5 key sections
 - 🎯 Choose between OpenRouter (cloud) or Ollama (local) models
 - 🎨 Beautiful, responsive UI with Tailwind CSS
+- 🐳 Docker support for production deployment
 - ⚡ Fast processing with Next.js 15
 
 ### Evaluation Sections
@@ -50,6 +51,23 @@ npm run dev
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 **Note**: No `.env` file needed! The app will prompt for your OpenRouter API key when you select an OpenRouter model.
+
+## Docker
+
+Run the app in production mode with Docker:
+
+```bash
+docker compose up --build
+```
+
+Then open [http://localhost:3000](http://localhost:3000).
+
+You can also use plain Docker commands:
+
+```bash
+docker build -t ats-resume-scorer .
+docker run --rm -p 3000:3000 ats-resume-scorer
+```
 
 ## Usage
 
