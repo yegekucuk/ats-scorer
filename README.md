@@ -60,13 +60,13 @@ Run the app in production mode with Docker:
 docker compose up --build
 ```
 
-Then open [http://localhost:3000](http://localhost:3000).
+Then open [http://localhost:8096](http://localhost:8096).
 
 You can also use plain Docker commands:
 
 ```bash
 docker build -t ats-resume-scorer .
-docker run --rm -p 3000:3000 ats-resume-scorer
+docker run --rm -p 8096:8096 ats-resume-scorer
 ```
 
 ## Usage
